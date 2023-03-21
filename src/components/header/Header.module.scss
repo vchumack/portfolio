@@ -1,0 +1,11 @@
+@import "@/styles/mixins";
+@import "@/styles/variables";
+
+.header {
+   padding-top: 20px;
+   padding-bottom: 20px;
+}
+
+.wrapper {
+   @include flex(space-around, center);
+}

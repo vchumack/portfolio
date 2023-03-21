@@ -1,0 +1,24 @@
+@import "@/styles/mixins";
+@import "@/styles/variables";
+
+
+.container {
+   display: grid;
+   grid-template-columns: 1fr;
+
+   @include media("tablet") {
+      grid-template-columns: 1fr;
+   }
+
+   @include media("desktop") {
+      grid-template-columns: 1fr 1fr;
+   }
+
+
+
+   h2 {
+      font-size: 32px;
+
+      text-align: center;
+   }
+}
