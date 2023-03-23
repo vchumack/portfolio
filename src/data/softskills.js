@@ -1,5 +1,4 @@
 export const softskillsList = [
-	"Stress resistance and ability to makedecisions in non-standard conditions",
 	"Creativity",
 	"Committed",
 	"Organizational skills",
@@ -7,4 +6,5 @@ export const softskillsList = [
 	"Mentoring and teaching ability",
 	"Communicative",
 	"Friendly and positive in all aspects",
+	"Ability to makedecisions in non-standard conditions",
 ];

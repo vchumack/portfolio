@@ -1,24 +1,36 @@
 @import "@/styles/mixins";
 @import "@/styles/variables";
 
+.section {
+   background: linear-gradient(47deg, rgba(23, 10, 35, 0.61) 61%, rgba(50, 7, 99, 0.39) 73%, rgba(11, 130, 148, 0.514) 101%, rgba(31, 16, 65, 0) 88%);
+}
 
 .container {
-   display: grid;
-   grid-template-columns: 1fr;
-
-   @include media("tablet") {
-      grid-template-columns: 1fr;
-   }
-
-   @include media("desktop") {
-      grid-template-columns: 1fr 1fr;
-   }
-
-
 
    h2 {
-      font-size: 32px;
-
-      text-align: center;
+      @include title();
    }
+}
+
+.projectList {
+   width: 80%;
+   @include flex();
+   flex-wrap: wrap;
+   gap: 30px;
+
+   li {
+      padding: 20px;
+
+      background-color: rgba(7, 7, 7, .412);
+      border-radius: 5%;
+      box-shadow: inset 8px 8px 8px 2px rgba(61, 130, 142, 0.2), 8px 8px 8px 2px rgba(61, 130, 142, 0.2);
+
+      transition: $transition;
+
+   }
+
+   li:hover {
+      transform: scale(1.05);
+   }
+
 }

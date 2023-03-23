@@ -1,11 +1,11 @@
 import Head from "next/head";
 // import Image from "next/image";
-import { Inter } from "@next/font/google";
-import { About } from "@/components/about/About";
-import { Projects } from "@/components/projects/Projects";
+import { Inter } from "next/font/google";
 import Link from "next/link";
 import { projectList } from "@/data/projects";
 import Image from "next/image";
+
+import styles from "@/styles/projects.module.scss";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -33,13 +33,17 @@ export default function Project({ project }) {
 				/>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			<h1>{name}</h1>
-			<Link href={ref}>Site</Link>
-			<Link href={github}>GitHub</Link>
-			<p>{description}</p>
-			<p>{technologies}</p>
-			<p>Project Role/Activity: {roleOnTheProject}</p>
-			<Image alt="progect" src={img} width={600} height={300} />
+			<section className={`section ${styles.section}`}>
+				<div className={`container ${styles.container}`}>
+					<h1 className={styles.title}>{name}</h1>
+					<Link href={ref}>Site</Link>
+					<Link href={github}>GitHub</Link>
+					<p>{description}</p>
+					<p>{technologies}</p>
+					<p>Project Role/Activity: {roleOnTheProject}</p>
+					<Image alt="progect" src={img} width={600} height={300} />
+				</div>
+			</section>
 		</>
 	);
 }

@@ -1,10 +1,10 @@
 import Head from "next/head";
 import Image from "next/image";
-import { Inter } from "@next/font/google";
+import { Inter } from "next/font/google";
 import { About } from "@/components/about/About";
 import { Projects } from "@/components/projects/Projects";
-import { SoftSkills } from "@/components/softSkills/softSkills";
-import { TechSkills } from "@/components/techSkills/TechSkills";
+import { Skills } from "@/components/skills/Skills";
+import { Path } from "@/components/path/Path";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,8 +24,8 @@ export default function Home() {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<About />
-			<TechSkills />
-			<SoftSkills />
+			<Skills />
+			<Path />
 			<Projects />
 		</>
 	);

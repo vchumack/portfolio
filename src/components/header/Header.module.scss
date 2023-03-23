@@ -2,10 +2,34 @@
 @import "@/styles/variables";
 
 .header {
+   // padding-top: 20px;
+   // padding-bottom: 20px;
+   // width: 100%;
+   border-bottom: 2px solid $accent-color;
+   position: absolute;
+   top: 0;
    padding-top: 20px;
    padding-bottom: 20px;
+   left: 50%;
+   transform: translateX(-50%);
+
+   animation: opacityAnimation 1.2s ease-in-out
 }
 
 .wrapper {
-   @include flex(space-around, center);
+   @include flex(space-between, center);
+}
+
+@keyframes opacityAnimation {
+   0% {
+      opacity: 0;
+
+   }
+
+   100% {
+      opacity: 1;
+
+   }
+
+
 }

@@ -1,0 +1,39 @@
+@import "@/styles/mixins";
+@import "@/styles/variables";
+
+.container {
+
+   h2 {
+      @include title();
+      text-align: center;
+      margin-bottom: 30px;
+   }
+}
+
+.contactList {
+   @include flex(center, center);
+   flex-direction: column;
+   gap: 40px;
+
+   @include media("tablet") {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+   }
+
+
+   div {
+      @include flex(_, center);
+      flex-direction: column;
+      gap: 10px;
+   }
+
+   a,
+   p {
+      font-size: 18px;
+
+      @include media("desktop") {
+         font-size: 20px;
+      }
+   }
+}

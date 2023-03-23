@@ -1,4 +1,4 @@
-import glMedia from "../../public/img/glMedia.JPG";
+import glMedia from "../../public/img/glMedia1.JPG";
 import oniTech from "../../public/img/oniTech.JPG";
 import myd from "../../public/img/myd.JPG";
 import careYourPets from "../../public/img/careYourPets.JPG";

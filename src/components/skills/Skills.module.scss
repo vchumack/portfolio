@@ -1,0 +1,46 @@
+@import "@/styles/mixins";
+@import "@/styles/variables";
+
+.section {
+   background: linear-gradient(316deg, rgba(23, 10, 35, 0.61) 61%, rgba(50, 7, 99, 0.39) 73%, rgba(11, 130, 148, 0.514) 101%, rgba(31, 16, 65, 0) 88%);
+}
+
+.container {
+   display: grid;
+   gap: 20px;
+
+   @include gridTemplateColumnsMedia();
+
+
+   @include media("tablet") {
+      justify-items: flex-end;
+      gap: 0;
+   }
+
+
+   @include media("desktop") {
+      grid-template-columns: 1fr 1fr;
+   }
+
+   img {
+      border-radius: 10%;
+
+      @include media("tablet") {
+         width: 400px;
+         height: 400px;
+      }
+
+      @include media("desktop") {
+         width: 500px;
+         height: 500px;
+      }
+   }
+
+   h2 {
+      @include title();
+   }
+}
+
+.skillList {
+   @include ListStyle();
+}
