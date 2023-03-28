@@ -6,6 +6,9 @@ import { projectList } from "@/data/projects";
 import Image from "next/image";
 
 import styles from "@/styles/projects.module.scss";
+import { HeaderPages } from "@/components/header/HeaderPages";
+
+import dart from "../../../public/img/dart.PNG";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -33,15 +36,32 @@ export default function Project({ project }) {
 				/>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
+			<HeaderPages />
 			<section className={`section ${styles.section}`}>
 				<div className={`container ${styles.container}`}>
 					<h1 className={styles.title}>{name}</h1>
-					<Link href={ref}>Site</Link>
-					<Link href={github}>GitHub</Link>
-					<p>{description}</p>
-					<p>{technologies}</p>
-					<p>Project Role/Activity: {roleOnTheProject}</p>
-					<Image alt="progect" src={img} width={600} height={300} />
+
+					<div className={styles.linkList}>
+						<Link href={ref} target="_blank">
+							Site
+						</Link>
+						<Link href={github} target="_blank">
+							GitHub
+						</Link>
+					</div>
+					<p className={styles.description}>{description}</p>
+					<p>
+						<b>The Technology Stack: </b>
+						<span>{technologies}</span>{" "}
+					</p>
+					<p>
+						<b>Project Role/Activity:</b>{" "}
+						<span>{roleOnTheProject}</span>{" "}
+					</p>
+					<Image alt="progect" src={img} width={260} height={130} />
+				</div>
+				<div className={styles.imgBox}>
+					<Image src={dart} alt="dragon" width="200" height="200" />
 				</div>
 			</section>
 		</>

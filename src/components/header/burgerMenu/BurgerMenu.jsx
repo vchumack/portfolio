@@ -6,7 +6,7 @@ import styles from "./BurgerMenu.module.scss";
 const BurgerMenu = ({ isOpen, toggle }) => {
 	return (
 		<div className={isOpen ? styles.open : styles.closed}>
-			<div className="section">
+			<div className={styles.section}>
 				<div className="container">
 					<div className={styles.main}>
 						<Burger isOpen={isOpen} toggle={toggle} />

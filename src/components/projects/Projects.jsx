@@ -1,11 +1,14 @@
 import { projectList } from "@/data/projects";
 import Image from "next/image";
 import Link from "next/link";
+
+import harly from "../../../public/img/harly1.PNG";
+
 import styles from "./Projects.module.scss";
 
 export const Projects = () => {
 	return (
-		<div className={`section ${styles.section}`}>
+		<section id="Projects" className={`section ${styles.section}`}>
 			<div className={`container ${styles.container}`}>
 				<h2>Projects</h2>
 				<ul className={styles.projectList}>
@@ -26,6 +29,9 @@ export const Projects = () => {
 					))}
 				</ul>
 			</div>
-		</div>
+			<div className={styles.imgBox}>
+				<Image src={harly} alt="dragon" width="200" height="200" />
+			</div>
+		</section>
 	);
 };

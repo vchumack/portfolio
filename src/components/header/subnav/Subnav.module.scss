@@ -2,13 +2,13 @@
 @import "@/styles/variables";
 
 .wrapper {
-	@include flex(center, flex-end);
+	@include flex(center, center);
 	flex-direction: column;
 	gap: 10px;
 
 	@include media(tablet) {
 		flex-direction: row;
-		align-items: center;
+		// align-items: center;
 	}
 
 	@include media(desktop) {

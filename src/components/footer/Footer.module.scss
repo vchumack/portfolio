@@ -1,6 +1,11 @@
 @import "@/styles/mixins";
 @import "@/styles/variables";
 
+.footer {
+   background: $primary-bg-color;
+   // background: linear-gradient(270deg, rgb(20 45 55 / 48%) 12%, rgb(28 138 176 / 43%) 50%, rgb(57 20 96 / 48%) 88%);
+}
+
 .container {
 
    h2 {

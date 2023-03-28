@@ -1,1 +1,1 @@
-export const navbar = ["About me", "Skills", "My Path", "Projects", "Contacts"];
+export const navbar = ["About", "Skills", "Path", "Projects"];

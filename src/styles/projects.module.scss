@@ -3,13 +3,38 @@
 
 
 .section {
+   // position: relative;
+   background: linear-gradient(47deg, rgba(23, 10, 35, 0.61) 61%, rgba(50, 7, 99, 0.39) 73%, rgba(11, 130, 148, 0.514) 101%, rgba(31, 16, 65, 0) 88%);
+
    margin-top: 100px;
+   display: grid;
+   grid-template-columns: 1fr;
+
+
+   @include media("tablet") {
+      grid-template-columns: 4fr 1fr;
+   }
+
+   @include media("desktop") {
+      grid-template-columns: 4fr 1fr;
+   }
 }
 
 .container {
+   width: 80%;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   @include flex(center, center);
+   flex-direction: column;
+
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
    h1 {
-      font-size: 45px;
+      margin-bottom: 20px;
+
+      font-size: 35px;
+      text-align: center;
+
 
       @include media("tablet") {
          font-size: 65px;
@@ -17,6 +42,74 @@
 
       @include media("desktop") {
          font-size: 80px;
+      }
+   }
+
+   .linkList {
+      @include flex(center, center);
+      gap: 30px;
+      margin-bottom: 20px;
+
+
+      a {
+         padding: 10px 30px;
+         border-radius: 5px;
+         box-shadow: rgba(255, 251, 251, 0.35) 0px 5px 15px;
+         transition: $transition;
+      }
+
+      a:hover,
+      a:focus {
+         color: $dark-text-color;
+         background-color: $light-bg-color;
+
+      }
+   }
+
+   .description {
+
+      @include media("desktop") {
+         font-size: 18px;
+      }
+
+   }
+
+   p {
+      margin-bottom: 20px;
+   }
+
+   span {
+      color: $third-text-color;
+   }
+
+   img {
+      @include media("tablet") {
+         width: 460px;
+         height: 230px;
+      }
+
+      @include media("desktop") {
+         width: 600px;
+         height: 300px;
+      }
+   }
+
+
+}
+
+.imgBox {
+   @include flex(center, center);
+
+   img {
+
+      @include media("tablet") {
+         width: 300px;
+         height: 300px;
+      }
+
+      @include media("desktop") {
+         width: 300px;
+         height: 300px;
       }
    }
 }

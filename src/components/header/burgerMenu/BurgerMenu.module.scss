@@ -19,7 +19,16 @@
 
 .closed {
 	@extend .open;
-	transform: translateX(100%);
+	transform: translateX(-100vw);
+}
+
+.section {
+	position: absolute;
+	z-index: 500;
+	padding: 20px 0;
+	background-color: black;
+	width: 100vw;
+	height: 100vh;
 }
 
 .main {

@@ -2,7 +2,7 @@ import styles from "./Path.module.scss";
 
 export const Path = () => {
 	return (
-		<div className={`section ${styles.section}`}>
+		<section id="Path" className={`section ${styles.section}`}>
 			<div className={`container ${styles.container}`}>
 				<h2>My Path</h2>
 				<div className={styles.grid}>
@@ -84,6 +84,6 @@ export const Path = () => {
 					<div className={styles.line}></div>
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 };

@@ -2,6 +2,7 @@
 @import "@/styles/variables";
 
 .section {
+   position: relative;
    background: linear-gradient(47deg, rgba(23, 10, 35, 0.61) 61%, rgba(50, 7, 99, 0.39) 73%, rgba(11, 130, 148, 0.514) 101%, rgba(31, 16, 65, 0) 88%);
 }
 
@@ -33,4 +34,36 @@
       transform: scale(1.05);
    }
 
+}
+
+.imgBox {
+   position: absolute;
+   z-index: -1;
+
+   top: 1%;
+   right: -5%;
+
+   @include media("tablet") {
+      top: 35%;
+      right: 2%;
+   }
+
+   @include media("desktop") {
+
+      top: 27%;
+      right: 8%;
+   }
+
+   img {
+
+      @include media("tablet") {
+         width: 300px;
+         height: 300px;
+      }
+
+      @include media("desktop") {
+         width: 300px;
+         height: 300px;
+      }
+   }
 }

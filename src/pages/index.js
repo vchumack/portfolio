@@ -1,6 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
+
+import { Header } from "@/components/header/Header";
 import { About } from "@/components/about/About";
 import { Projects } from "@/components/projects/Projects";
 import { Skills } from "@/components/skills/Skills";
@@ -23,6 +25,7 @@ export default function Home() {
 				/>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
+			<Header />
 			<About />
 			<Skills />
 			<Path />

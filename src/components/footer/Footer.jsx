@@ -3,7 +3,7 @@ import styles from "./Footer.module.scss";
 
 export const Footer = () => {
 	return (
-		<div className={`section ${styles.section}`}>
+		<footer id="Contacts" className={`section ${styles.footer}`}>
 			<div className={`container ${styles.container}`}>
 				<h2>Contact Me</h2>
 				<ul className={styles.contactList}>
@@ -41,6 +41,6 @@ export const Footer = () => {
 					</li>
 				</ul>
 			</div>
-		</div>
+		</footer>
 	);
 };

@@ -1,14 +1,14 @@
 import Image from "next/image";
-import dragon from "../../../public/img/dragon.png";
 import { techskillsList } from "@/data/techskills";
 import { softskillsList } from "@/data/softskills";
+
+import dragon from "../../../public/img/dragon1.png";
 
 import styles from "./Skills.module.scss";
 
 export const Skills = () => {
 	return (
-		<div className={`section ${styles.section}`}>
-			{/* <Image src={dragon} alt="dragon" width="300" height="300" /> */}
+		<section id="Skills" className={`section ${styles.section}`}>
 			<div className={`container ${styles.container}`}>
 				<div>
 					<h2>Tech Skills</h2>
@@ -28,6 +28,9 @@ export const Skills = () => {
 					</ul>
 				</div>
 			</div>
-		</div>
+			<div className={styles.imgBox}>
+				<Image src={dragon} alt="dragon" width="200" height="200" />
+			</div>
+		</section>
 	);
 };

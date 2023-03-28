@@ -6,11 +6,10 @@ const Subnav = ({ toggle }) => {
 	return (
 		<div className={styles.wrapper}>
 			<Link
-				href="https://www.instagram.com/ler_i/"
+				href="#Contacts"
 				className={styles.contact}
 				scroll={false}
 				onClick={toggle}
-				target="_blank"
 			>
 				Contact Me
 			</Link>

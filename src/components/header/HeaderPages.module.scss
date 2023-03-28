@@ -2,13 +2,10 @@
 @import "@/styles/variables";
 
 .header {
-   // padding-top: 20px;
-   // padding-bottom: 20px;
-   // width: 100%;
+
    border-bottom: 2px solid $accent-color;
    position: absolute;
    top: 0;
-   z-index: 20;
    padding-top: 20px;
    padding-bottom: 20px;
    left: 50%;
@@ -17,20 +14,32 @@
    animation: opacityAnimation 1.2s ease-in-out
 }
 
-.container {
-   @include flex(space-between, center);
+.link {
+   font-size: 25px;
+   color: $primary-text-color;
+   transition: $transition;
+
+   @include media(tablet) {
+      font-size: 16px;
+   }
+
+   @include media(desktop) {
+      font-size: 20px;
+
+      &:hover,
+      &:focus {
+         color: $accent-color;
+      }
+   }
 }
 
 @keyframes opacityAnimation {
    0% {
       opacity: 0;
-
    }
 
    100% {
       opacity: 1;
-
    }
-
 
 }

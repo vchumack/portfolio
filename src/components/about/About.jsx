@@ -6,7 +6,7 @@ import styles from "./About.module.scss";
 
 export const About = () => {
 	return (
-		<div className={`section ${styles.section}`}>
+		<section id="About" className={`section ${styles.section}`}>
 			<div className={`container ${styles.container}`}>
 				<div className={styles.infoBox}>
 					<div className={styles.element}></div>
@@ -25,6 +25,6 @@ export const About = () => {
 					</p>
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 };
