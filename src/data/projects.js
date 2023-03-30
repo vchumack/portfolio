@@ -1,9 +1,9 @@
-const glMedia = "/public/img/glMedia1.jpg";
-const oniTech = "/public/img/oniTech.jpg";
-const myd = "/public/img/myd.jpg";
-const careYourPets = "/public/img/careYourPets.jpg";
-const readingPractice = "/public/img/readingPractice.jpg";
-const whatToWatch = "/public/img/whatToWatch.jpg";
+const glMedia = "/img/glMedia1.jpg";
+const oniTech = "/img/oniTech.jpg";
+const myd = "/img/myd.jpg";
+const careYourPets = "/img/careYourPets.jpg";
+const readingPractice = "/img/readingPractice.jpg";
+const whatToWatch = "/img/whatToWatch.jpg";
 
 export const projectList = [
 	{

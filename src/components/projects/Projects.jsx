@@ -2,7 +2,7 @@ import { projectList } from "@/data/projects";
 import Image from "next/image";
 import Link from "next/link";
 
-const harly = "/public/img/harly1.png";
+const harly = "/img/harly1.png";
 
 import styles from "./Projects.module.scss";
 

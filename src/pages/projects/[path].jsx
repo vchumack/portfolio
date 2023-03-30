@@ -60,7 +60,7 @@ export default function Project({ project }) {
 				</div>
 				<div className={styles.imgBox}>
 					<Image
-						src="/public/img/dart11.png"
+						src="/img/dart11.png"
 						alt="dart"
 						width="200"
 						height="200"
