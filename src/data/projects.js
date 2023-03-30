@@ -1,10 +1,3 @@
-const glMedia = "/img/glMedia1.jpg";
-const oniTech = "/img/oniTech.jpg";
-const myd = "/img/myd.jpg";
-const careYourPets = "/img/careYourPets.jpg";
-const readingPractice = "/img/readingPractice.jpg";
-const whatToWatch = "/img/whatToWatch.jpg";
-
 export const projectList = [
 	{
 		path: "gl_media",
@@ -15,7 +8,7 @@ export const projectList = [
 			"A one-page website for a web studio made with Next.js, React, and Sass. Implemented adaptation to all devices, multi-language and order processing in Google Docs and telegram ",
 		technologies: "Next.js, React, Sass",
 		roleOnTheProject: "Design, Content writing, Frontend development",
-		img: glMedia,
+		img: "/img/glMedia1.jpg",
 	},
 
 	{
@@ -27,7 +20,7 @@ export const projectList = [
 			"A website that provides MVP products, design, and analytics services",
 		technologies: "React, React Hook Form, Sass",
 		roleOnTheProject: "Frontend development",
-		img: oniTech,
+		img: "/img/oniTech.jpg",
 	},
 	{
 		path: "myd",
@@ -38,7 +31,7 @@ export const projectList = [
 			"A one-page website for a studio that provides website development services",
 		technologies: "React, Next.js, React Hook Form, Sass",
 		roleOnTheProject: "Frontend development",
-		img: myd,
+		img: "/img/myd.jpg",
 	},
 	{
 		path: "care_your_pets",
@@ -51,7 +44,7 @@ export const projectList = [
 			"React, MongoDB, Node.js, Redux, Sass, Registration/Authorization",
 		roleOnTheProject:
 			"Team Leader, Organization of the project structure, Frontend development, Backend development",
-		img: careYourPets,
+		img: "/img/careYourPets.jpg",
 	},
 	{
 		path: "reading_practice",
@@ -63,7 +56,7 @@ export const projectList = [
 		technologies:
 			"React, Redux, Routing, Emotion, Registration/Authorization",
 		roleOnTheProject: "Scrum master, Frontend development",
-		img: readingPractice,
+		img: "/img/readingPractice.jpg",
 	},
 	{
 		path: "what_to_watch",
@@ -74,6 +67,6 @@ export const projectList = [
 			"A simple application that displays information about popular movies, as well as the ability to search for movies by title and explore information about the cast and reviews of it. Created with React.",
 		technologies: "React, Routing, Emotion",
 		roleOnTheProject: "Frontend development",
-		img: whatToWatch,
+		img: "/img/whatToWatch.jpg",
 	},
 ];
