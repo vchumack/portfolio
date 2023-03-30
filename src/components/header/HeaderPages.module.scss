@@ -11,16 +11,32 @@
    left: 50%;
    transform: translateX(-50%);
 
-   animation: opacityAnimation 1.2s ease-in-out
+   animation: opacityAnimation 1.2s ease-in-out;
+
+   nav {
+      @include flex(space-between, center);
+
+      div {
+         @include flex();
+         gap: 10px;
+
+         @include media(tablet) {
+            gap: 30px;
+         }
+
+      }
+   }
 }
 
+
+
 .link {
-   font-size: 25px;
+   font-size: 16px;
    color: $primary-text-color;
    transition: $transition;
 
    @include media(tablet) {
-      font-size: 16px;
+      font-size: 18px;
    }
 
    @include media(desktop) {

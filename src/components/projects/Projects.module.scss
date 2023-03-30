@@ -37,13 +37,13 @@
 }
 
 .imgBox {
-   position: absolute;
-   z-index: -1;
 
-   top: 1%;
-   right: -5%;
+   display: none;
 
    @include media("tablet") {
+      display: block;
+      position: absolute;
+      z-index: -1;
       top: 35%;
       right: 2%;
    }
@@ -51,10 +51,14 @@
    @include media("desktop") {
 
       top: 27%;
+      // top: 0;
       right: 8%;
    }
 
    img {
+
+      width: 100px;
+      height: 100px;
 
       @include media("tablet") {
          width: 300px;
@@ -64,6 +68,7 @@
       @include media("desktop") {
          width: 300px;
          height: 300px;
+         // height: 600px;
       }
    }
 }

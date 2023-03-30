@@ -10,7 +10,7 @@ export const Path = () => {
 						<h3>1</h3>
 					</div>
 					<div className={`${styles.textRight}`}>
-						<h3>Education</h3>
+						<h3 className={styles.title}>Education</h3>
 						<p>
 							My first education was in <span>psychology</span>,
 							but the second time around I seriously decided to
@@ -18,7 +18,7 @@ export const Path = () => {
 						</p>
 					</div>
 					<div className={`${styles.textLeft}`}>
-						<h3>Experience</h3>
+						<h3 className={styles.title}>Experience</h3>
 						<p>
 							I have dedicated over <span>10 years</span> of my
 							life to <span>social media marketing</span>,
@@ -36,7 +36,7 @@ export const Path = () => {
 					</div>
 
 					<div className={`${styles.textRight}`}>
-						<h3>Achievements</h3>
+						<h3 className={styles.title}>Achievements</h3>
 						<ul>
 							<li>
 								<span>Assembled</span> and trained a{" "}
@@ -58,7 +58,7 @@ export const Path = () => {
 					</div>
 
 					<div className={`${styles.textLeft}`}>
-						<h3>Programming</h3>
+						<h3 className={styles.title}>Programming</h3>
 						<p>
 							<b>Commercial experience:</b> I have created several
 							websites using WordPress, as well as{" "}

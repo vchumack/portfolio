@@ -45,7 +45,8 @@
 
    h3 {
       @include media("desktop") {
-         font-size: 24px;
+         font-size: 26px;
+
       }
    }
 
@@ -60,6 +61,16 @@
 
 .textLeft {
    text-align: right;
+}
+
+.title {
+   display: inline-block;
+   background-color: #78777963;
+
+   padding: 5px 20px;
+   margin-bottom: 10px;
+   border-radius: 10px;
+   box-shadow: rgba(74, 120, 121, 0.35) 0px 5px 15px;
 }
 
 .number {

@@ -12,11 +12,11 @@
 
 
    @include media("tablet") {
-      grid-template-columns: 4fr 1fr;
+      grid-template-columns: 3fr 1fr;
    }
 
    @include media("desktop") {
-      grid-template-columns: 4fr 1fr;
+      // grid-template-columns: 4fr 1fr;
    }
 }
 
@@ -37,11 +37,11 @@
 
 
       @include media("tablet") {
-         font-size: 65px;
+         font-size: 54px;
       }
 
       @include media("desktop") {
-         font-size: 80px;
+         font-size: 70px;
       }
    }
 
@@ -98,18 +98,25 @@
 }
 
 .imgBox {
-   @include flex(center, center);
+
+   display: none;
+
+   @include media("tablet") {
+      @include flex(center, center);
+   }
+
+
 
    img {
 
       @include media("tablet") {
-         width: 300px;
-         height: 300px;
+         width: 250px;
+         height: 500px;
       }
 
       @include media("desktop") {
          width: 300px;
-         height: 300px;
+         height: 600px;
       }
    }
 }
