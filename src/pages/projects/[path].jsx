@@ -8,8 +8,6 @@ import Image from "next/image";
 import styles from "@/styles/projects.module.scss";
 import { HeaderPages } from "@/components/header/HeaderPages";
 
-import dart from "../../../public/img/dart11.png";
-
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Project({ project }) {
@@ -61,7 +59,12 @@ export default function Project({ project }) {
 					<Image alt="progect" src={img} width={260} height={130} />
 				</div>
 				<div className={styles.imgBox}>
-					<Image src={dart} alt="dragon" width="200" height="200" />
+					<Image
+						src="/public/img/dart11.png"
+						alt="dart"
+						width="200"
+						height="200"
+					/>
 				</div>
 			</section>
 		</>

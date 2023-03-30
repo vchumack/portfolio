@@ -2,8 +2,6 @@ import Image from "next/image";
 import { techskillsList } from "@/data/techskills";
 import { softskillsList } from "@/data/softskills";
 
-import dragon from "../../../public/img/dragon1.png";
-
 import styles from "./Skills.module.scss";
 
 export const Skills = () => {
@@ -29,7 +27,7 @@ export const Skills = () => {
 				</div>
 			</div>
 			<div className={styles.imgBox}>
-				<Image src={dragon} alt="dragon" width="200" height="200" />
+				<Image src="/public/img/dragon1.png" alt="dragon" width="200" height="200" />
 			</div>
 		</section>
 	);

@@ -1,7 +1,5 @@
 import Image from "next/image";
 
-import leri from "../../../public/img/leri.jpg";
-
 import styles from "./About.module.scss";
 
 export const About = () => {

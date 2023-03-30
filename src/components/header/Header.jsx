@@ -4,8 +4,6 @@ import { useMedia } from "@/shared/hooks/useMedia";
 import { removeScroll } from "@/shared/functions/removeScroll";
 import { toggler } from "@/shared/functions/toggler";
 
-import leri from "../../../public/img/leri.jpg";
-
 import Navbar from "./navbar/Navbar";
 import Subnav from "./subnav/Subnav";
 import Burger from "./burger/Burger";
