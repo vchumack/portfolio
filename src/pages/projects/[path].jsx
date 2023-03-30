@@ -8,7 +8,7 @@ import Image from "next/image";
 import styles from "@/styles/projects.module.scss";
 import { HeaderPages } from "@/components/header/HeaderPages";
 
-import dart from "../../../public/img/dart11.PNG";
+import dart from "../../../public/img/dart11.png";
 
 const inter = Inter({ subsets: ["latin"] });
 
