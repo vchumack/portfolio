@@ -1,9 +1,9 @@
-import glMedia from "../../public/img/glMedia1.JPG";
-import oniTech from "../../public/img/oniTech.JPG";
-import myd from "../../public/img/myd.JPG";
-import careYourPets from "../../public/img/careYourPets.JPG";
-import readingPractice from "../../public/img/readingPractice.JPG";
-import whatToWatch from "../../public/img/whatToWatch.JPG";
+import glMedia from "../../public/img/glMedia1.jpg";
+import oniTech from "../../public/img/oniTech.jpg";
+import myd from "../../public/img/myd.jpg";
+import careYourPets from "../../public/img/careYourPets.jpg";
+import readingPractice from "../../public/img/readingPractice.jpg";
+import whatToWatch from "../../public/img/whatToWatch.jpg";
 
 export const projectList = [
 	{
