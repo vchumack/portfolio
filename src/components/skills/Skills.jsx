@@ -27,7 +27,12 @@ export const Skills = () => {
 				</div>
 			</div>
 			<div className={styles.imgBox}>
-				<Image src="/img/dragon1.png" alt="dragon" width="200" height="200" />
+				<Image
+					src="/static/img/dragon1.png"
+					alt="dragon"
+					width="200"
+					height="200"
+				/>
 			</div>
 		</section>
 	);
