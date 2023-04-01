@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 import styles from "./About.module.scss";
 
 export const About = () => {
@@ -10,7 +8,6 @@ export const About = () => {
 					<div className={styles.element}></div>
 					<h1>Hi, {"I'm"} Valeri</h1>
 					<h2>Full-stack developer</h2>
-					{/* <Image src={leri} alt="leri" width="100" height="100" /> */}
 
 					<p>
 						I create websites, various interfaces, and web

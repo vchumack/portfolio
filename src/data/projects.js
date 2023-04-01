@@ -8,7 +8,7 @@ export const projectList = [
 			"A one-page website for a web studio made with Next.js, React, and Sass. Implemented adaptation to all devices, multi-language and order processing in Google Docs and telegram ",
 		technologies: "Next.js, React, Sass",
 		roleOnTheProject: "Design, Content writing, Frontend development",
-		img: "/static/img/glMedia1.jpg",
+		img: "/static/img/glMedia.jpg",
 	},
 
 	{

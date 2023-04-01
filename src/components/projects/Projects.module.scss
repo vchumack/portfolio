@@ -4,40 +4,70 @@
 .section {
    position: relative;
    background: linear-gradient(47deg, rgba(23, 10, 35, 0.61) 61%, rgba(50, 7, 99, 0.39) 73%, rgba(11, 130, 148, 0.514) 101%, rgba(31, 16, 65, 0) 88%);
+
 }
 
 .container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+   @include media("tablet") {
+      display: block;
+   }
 
    h2 {
       @include title();
+
+
+      text-align: center;
+
+      @include media("tablet") {
+         text-align: center;
+      }
+
+      @include media("desktop") {
+         text-align: left;
+      }
    }
 }
 
 .projectList {
+   margin-top: 10px;
    width: 80%;
-   @include flex();
+
+   @include flex(center);
    flex-wrap: wrap;
    gap: 30px;
+
+   @include media("tablet") {
+      justify-content: left;
+   }
 
    li {
       padding: 20px;
 
       background-color: rgba(7, 7, 7, .412);
       border-radius: 5%;
-      box-shadow: inset 8px 8px 8px 2px rgba(61, 130, 142, 0.2), 8px 8px 8px 2px rgba(61, 130, 142, 0.2);
+      box-shadow: $box-shadow;
 
       transition: $transition;
 
    }
 
-   li:hover {
+   li:hover,
+   li:focus {
       transform: scale(1.05);
+   }
+
+   .projectImg {
+      height: 100%;
+      width: 200px;
    }
 
 }
 
 .imgBox {
-
    display: none;
 
    @include media("tablet") {
@@ -51,7 +81,6 @@
    @include media("desktop") {
 
       top: 27%;
-      // top: 0;
       right: 8%;
    }
 
@@ -65,10 +94,5 @@
          height: 300px;
       }
 
-      @include media("desktop") {
-         width: 300px;
-         height: 300px;
-         // height: 600px;
-      }
    }
 }

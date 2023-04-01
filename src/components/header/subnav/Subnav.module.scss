@@ -8,7 +8,6 @@
 
 	@include media(tablet) {
 		flex-direction: row;
-		// align-items: center;
 	}
 
 	@include media(desktop) {
@@ -16,12 +15,13 @@
 	}
 
 	.contact {
-		color: $primary-text-color;
-		border: 1px solid $accent-color;
-		border-radius: 10px;
+		padding: 4px 10px;
 
 		font-size: 20px;
-		padding: 4px 10px;
+		color: $primary-text-color;
+		box-shadow: $btn-shadow;
+		border-radius: 10px;
+
 		transition: $transition;
 
 		@include media(tablet) {

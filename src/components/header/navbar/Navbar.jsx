@@ -1,6 +1,5 @@
-import { navbar } from "@/data/header";
-
 import Link from "next/link";
+import { navbar } from "@/data/header";
 
 import styles from "./Navbar.module.scss";
 

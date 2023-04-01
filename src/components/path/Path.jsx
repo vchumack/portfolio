@@ -1,4 +1,11 @@
+import { Ultra } from "next/font/google";
+
 import styles from "./Path.module.scss";
+
+const ultra = Ultra({
+	subsets: ["latin"],
+	weight: ["400"],
+});
 
 export const Path = () => {
 	return (
@@ -7,7 +14,7 @@ export const Path = () => {
 				<h2>My Path</h2>
 				<div className={styles.grid}>
 					<div className={styles.number}>
-						<h3>1</h3>
+						<h3 className={ultra.className}>1</h3>
 					</div>
 					<div className={`${styles.textRight}`}>
 						<h3 className={styles.title}>Education</h3>
@@ -29,10 +36,10 @@ export const Path = () => {
 						</p>
 					</div>
 					<div className={styles.number}>
-						<h3>2</h3>
+						<h3 className={ultra.className}>2</h3>
 					</div>
 					<div className={styles.number}>
-						<h3>3</h3>
+						<h3 className={ultra.className}>3</h3>
 					</div>
 
 					<div className={`${styles.textRight}`}>
@@ -78,7 +85,7 @@ export const Path = () => {
 						</p>
 					</div>
 					<div className={styles.number}>
-						<h3>4</h3>
+						<h3 className={ultra.className}>4</h3>
 					</div>
 
 					<div className={styles.line}></div>

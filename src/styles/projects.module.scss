@@ -3,31 +3,26 @@
 
 
 .section {
-   // position: relative;
-   background: linear-gradient(47deg, rgba(23, 10, 35, 0.61) 61%, rgba(50, 7, 99, 0.39) 73%, rgba(11, 130, 148, 0.514) 101%, rgba(31, 16, 65, 0) 88%);
-
-   margin-top: 100px;
    display: grid;
    grid-template-columns: 1fr;
+   margin-top: 100px;
 
+   background: linear-gradient(47deg, rgba(23, 10, 35, 0.61) 61%, rgba(50, 7, 99, 0.39) 73%, rgba(11, 130, 148, 0.514) 101%, rgba(31, 16, 65, 0) 88%);
 
    @include media("tablet") {
       grid-template-columns: 3fr 1fr;
    }
-
-   @include media("desktop") {
-      // grid-template-columns: 4fr 1fr;
-   }
 }
 
 .container {
-   width: 80%;
-   padding-top: 10px;
-   padding-bottom: 10px;
    @include flex(center, center);
    flex-direction: column;
 
-   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   width: 80%;
+   padding-top: 10px;
+   padding-bottom: 10px;
+
+
 
    h1 {
       margin-bottom: 20px;
@@ -53,15 +48,15 @@
 
       a {
          padding: 10px 30px;
-         border-radius: 5px;
-         box-shadow: rgba(255, 251, 251, 0.35) 0px 5px 15px;
+         border-radius: 10px;
+         box-shadow: $btn-shadow;
          transition: $transition;
       }
 
       a:hover,
       a:focus {
          color: $dark-text-color;
-         background-color: $light-bg-color;
+         background-color: $accent-color;
 
       }
    }
@@ -79,7 +74,7 @@
    }
 
    span {
-      color: $third-text-color;
+      color: $secondary-text-color;
    }
 
    img {
@@ -98,7 +93,6 @@
 }
 
 .imgBox {
-
    display: none;
 
    @include media("tablet") {

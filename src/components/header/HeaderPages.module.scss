@@ -2,15 +2,15 @@
 @import "@/styles/variables";
 
 .header {
-
-   border-bottom: 2px solid $accent-color;
-   position: absolute;
-   top: 0;
    padding-top: 20px;
    padding-bottom: 20px;
+
+   position: absolute;
+   top: 0;
    left: 50%;
    transform: translateX(-50%);
 
+   border-bottom: 2px solid $accent-color;
    animation: opacityAnimation 1.2s ease-in-out;
 
    nav {

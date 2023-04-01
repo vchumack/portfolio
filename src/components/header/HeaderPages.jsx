@@ -1,9 +1,9 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
+import Subnav from "./subnav/Subnav.jsx";
 import { projectList } from "../../data/projects.js";
 
 import styles from "./HeaderPages.module.scss";
-import Subnav from "./subnav/Subnav.jsx";
 
 export const HeaderPages = () => {
 	const { query } = useRouter();

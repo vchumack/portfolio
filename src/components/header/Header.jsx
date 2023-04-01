@@ -1,6 +1,7 @@
-import Image from "next/image";
+
 import { useEffect, useState } from "react";
-import { useMedia } from "@/shared/hooks/useMedia";
+import { useMediaQuery } from "react-responsive";
+
 import { removeScroll } from "@/shared/functions/removeScroll";
 import { toggler } from "@/shared/functions/toggler";
 
@@ -10,8 +11,7 @@ import Burger from "./burger/Burger";
 import BurgerMenu from "./burgerMenu/BurgerMenu";
 
 import styles from "./Header.module.scss";
-import { useMediaQuery } from "react-responsive";
-import { useRouter } from "next/router";
+
 
 export const Header = () => {
 	const isMobile = useMediaQuery({ maxWidth: 767.9 });

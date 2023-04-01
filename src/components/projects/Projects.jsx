@@ -1,10 +1,10 @@
-import { projectList } from "@/data/projects";
 import Image from "next/image";
 import Link from "next/link";
-
-const harly = "/static/img/harly1.png";
+import { projectList } from "@/data/projects";
 
 import styles from "./Projects.module.scss";
+
+const harly = "/static/img/harley.png";
 
 export const Projects = () => {
 	return (
@@ -17,10 +17,11 @@ export const Projects = () => {
 							<div>
 								<Link href={`/projects/${el.path}`}>
 									<Image
+										className={styles.projectImg}
 										src={el.img}
-										width="200"
-										height="auto"
-										alt="logo"
+										width={2048}
+										height={1365}
+										alt="project logos"
 									/>
 									<p>{el.name}</p>
 								</Link>
@@ -30,7 +31,12 @@ export const Projects = () => {
 				</ul>
 			</div>
 			<div className={styles.imgBox}>
-				<Image src={harly} alt="dragon" width="200" height="200" />
+				<Image
+					src={harly}
+					width={499}
+					height={499}
+					alt="Harley Quinn as a programmer"
+				/>
 			</div>
 		</section>
 	);

@@ -28,10 +28,10 @@ export const Skills = () => {
 			</div>
 			<div className={styles.imgBox}>
 				<Image
-					src="/static/img/dragon1.png"
-					alt="dragon"
-					width="200"
-					height="200"
+					src="/static/img/dragon.png"
+					alt="Space Dragon as a programmer"
+					width={499}
+					height={499}
 				/>
 			</div>
 		</section>

@@ -4,12 +4,8 @@
 .section {
    position: relative;
    width: 100%;
-   // height: 100vh;
 
-   background: $primary-bg-color;
-   // background: linear-gradient(270deg, rgb(20 45 55 / 48%) 12%, rgb(28 138 176 / 43%) 50%, rgb(57 20 96 / 48%) 88%);
-
-
+   background: rgba(23, 10, 35, 0.61);
 }
 
 .container {
@@ -22,7 +18,7 @@
    }
 
    span {
-      color: $third-text-color;
+      color: $secondary-text-color;
       text-decoration: underline;
    }
 
@@ -37,7 +33,8 @@
 
    display: grid;
    grid-template-columns: 1fr 1fr;
-   grid-column-gap: 35px;
+   grid-column-gap: 15px;
+   grid-row-gap: 10px;
 
    @include media("tablet") {
       grid-column-gap: 50px;
@@ -46,12 +43,13 @@
    h3 {
       @include media("desktop") {
          font-size: 26px;
-
       }
    }
 
    p,
    li {
+      font-size: 14px;
+
       @include media("desktop") {
          font-size: 18px;
       }
@@ -65,12 +63,17 @@
 
 .title {
    display: inline-block;
+   padding: 5px 10px;
+   margin-bottom: 10px;
+
    background-color: #78777963;
 
-   padding: 5px 20px;
-   margin-bottom: 10px;
    border-radius: 10px;
-   box-shadow: rgba(74, 120, 121, 0.35) 0px 5px 15px;
+   box-shadow: $box-shadow-pathSection;
+
+   @include media("tablet") {
+      padding: 5px 20px;
+   }
 }
 
 .number {
@@ -81,17 +84,24 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      font-size: 150px;
+      font-size: 90px;
 
       /* задаем ширину, цвет и стиль обводки текста */
       -webkit-text-stroke: 1px rgba(226, 212, 212, 0.155);
 
       /* задаем прозрачность текста */
-      // color: rgba(0, 0, 0, 0.114);
       color: transparent;
 
       /* наклоны текста */
       // transform: skew(0deg, -10deg);
+
+      @include media("tablet") {
+         font-size: 100px;
+      }
+
+      @include media("desktop") {
+         font-size: 130px;
+      }
 
    }
 }
@@ -101,12 +111,14 @@
 
 .line {
    position: absolute;
-   border: 3px solid $light-bg-color;
    top: -3%;
    bottom: -3%;
    left: 50%;
    transform: translateX(-50%);
    z-index: -1;
+
+   border: 3px solid $light-bg-color;
+
 
    @include media("desktop") {
       border: 4px solid $light-bg-color;

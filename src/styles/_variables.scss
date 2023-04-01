@@ -3,35 +3,23 @@ $tablet: 768px;
 $desktopMiddle: 1050px;
 $desktop: 1440px;
 
-$accent-color: #77AEDB;
+
+$accent-color: #9e6dc1;
+
 $primary-bg-color: rgb(5, 11, 14);
-
-$sec-bg-color: #640ca380;
-$light-bg-color: #e3c9ba;
-
-
-$primary-text-color: #e3c9ba;
-$secondary-text-color: #c9c0b0;
-$third-text-color: #f5e8e5;
-$dark-text-color: #1c1d25;
-
+$light-bg-color: #D2B48C;
 $burger-bg: rgba(17, 14, 14, 0.8);
+
+
+$primary-text-color: #D2B48C;
+$secondary-text-color: #F5F5DC;
+$dark-text-color: #1c1d25;
+// $third-text-color: #F5F5DC;
+
 
 $transition: 0.4s all ease-in-out;
 
-$text-shadow: 0.5px 0.5px 0.5px #4f4f4f;
-$secondary-text-shadow: #784f0249;
-
-// $primary-text-color: #FFFFFF;
-// $secondary-text-color: #BEA698;
-// $third-text-color: #A6E9D7;
-$fourth-text-color: #f1f1e1;
-$error-text-color: #d5431b;
-
-$hover-color: #00B6B0;
-
-
-$secondary-bg-color: #344E4D;
-$third-bg-color: #FFFFFF;
-$fourth-bg-color: #07070769;
-$form-bg-color: #E4E0D3
+$box-shadow: inset 8px 8px 8px 2px rgba(61, 130, 142, 0.2),
+   8px 8px 8px 2px rgba(61, 130, 142, 0.2);
+$box-shadow-pathSection: rgba(74, 120, 121, 0.35) 0px 5px 15px;
+$btn-shadow: rgba(255, 251, 251, 0.35) 0px 5px 15px;

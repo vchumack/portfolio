@@ -3,17 +3,18 @@
 
 .open {
 	@include flex(flex-start, center);
-	backdrop-filter: blur(50px);
 	flex-direction: column;
 	position: fixed;
 	top: 0;
 	right: 0;
 	left: 0;
 	bottom: 0;
-	text-align: center;
-	background-color: $burger-bg;
 	z-index: 4;
+	text-align: center;
 	transform: translateX(0%);
+
+	background-color: $burger-bg;
+	backdrop-filter: blur(50px);
 	transition: $transition;
 }
 
@@ -23,12 +24,12 @@
 }
 
 .section {
+	padding: 20px 0;
 	position: absolute;
 	z-index: 500;
-	padding: 20px 0;
-	background-color: black;
 	width: 100vw;
 	height: 100vh;
+	background-color: black;
 }
 
 .main {

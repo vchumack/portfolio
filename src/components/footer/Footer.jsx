@@ -1,4 +1,9 @@
 import Link from "next/link";
+import { BsInstagram, BsWhatsapp, BsPhone } from "react-icons/bs";
+import { FaTelegramPlane } from "react-icons/fa";
+import { MdAlternateEmail } from "react-icons/md";
+import { SiViber } from "react-icons/si";
+
 import styles from "./Footer.module.scss";
 
 export const Footer = () => {
@@ -9,20 +14,26 @@ export const Footer = () => {
 				<ul className={styles.contactList}>
 					<li>
 						<Link href="https://t.me/ler_i" target="_blank">
+							<FaTelegramPlane />
 							Telegram
 						</Link>
 					</li>
 					<li>
-						<div>
-							<p>
+						<div className={styles.linksBox}>
+							<div>
 								<Link href="https://wa.me/380988662213">
-									WhatsApp/
+									<BsWhatsapp />
+									WhatsApp
 								</Link>
 								<Link href="viber://chat?number=380988662213">
-									Viber/
+									<SiViber />
+									Viber
 								</Link>
-								Phone
-							</p>
+								<Link href="tel:+380988662213">
+									<BsPhone />
+									Phone
+								</Link>
+							</div>
 							<Link href="tel:+380988662213">
 								+(380)98 866 22 13
 							</Link>
@@ -33,11 +44,15 @@ export const Footer = () => {
 							href="https://www.instagram.com/ler_i/"
 							target="_blank"
 						>
+							<BsInstagram />
 							Instagram
 						</Link>
 					</li>
 					<li>
-						<Link href="mailto:vchumack2ne1@gmail.com">Email</Link>
+						<Link href="mailto:vchumack2ne1@gmail.com">
+							<MdAlternateEmail />
+							Email
+						</Link>
 					</li>
 				</ul>
 			</div>

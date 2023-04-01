@@ -1,6 +1,7 @@
 import Burger from "../burger/Burger";
 import Navbar from "../navbar/Navbar";
 import Subnav from "../subnav/Subnav";
+
 import styles from "./BurgerMenu.module.scss";
 
 const BurgerMenu = ({ isOpen, toggle }) => {
