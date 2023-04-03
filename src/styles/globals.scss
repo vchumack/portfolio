@@ -119,16 +119,18 @@ button {
 .container {
   margin: 0px auto;
   padding: 0px 15px;
-  width: $mobile;
+  // width: 100%;
+  max-width: 500px;
 
 
   @include media("tablet") {
-    width: $tablet;
     padding: 0px 30px;
+    width: $tablet;
+    max-width: none;
 
     @include media("desktop") {
-      width: $desktop;
       padding: 0px 100px;
+      width: $desktop;
     }
   }
 }
