@@ -58,6 +58,7 @@ export default function Project({ project }) {
 							src={img}
 							width={2048}
 							height={1365}
+							className={styles.projectImg}
 						/>
 					</div>
 				</div>
