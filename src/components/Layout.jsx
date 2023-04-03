@@ -1,5 +1,6 @@
 import { Itim } from "next/font/google";
 import { Footer } from "@/components/footer/Footer";
+import { Header } from "./header/Header";
 
 const itim = Itim({
 	subsets: ["latin"],
