@@ -21,13 +21,7 @@ export default function Project({ project }) {
 	return (
 		<>
 			<Head>
-				<title>Portfolio Web Developer</title>
-				<meta name="description" content="Portfolio Web Developer" />
-				<meta
-					name="viewport"
-					content="width=device-width, initial-scale=1"
-				/>
-				<link rel="icon" href="/favicon.ico" />
+				<title>Projects</title>
 			</Head>
 			<HeaderPages />
 			<section className={`section ${styles.section}`}>
