@@ -25,8 +25,8 @@ export const projectList = [
 	{
 		path: "myd",
 		name: "MYD",
-		ref: "https://myd-ten.vercel.app/",
-		github: "https://github.com/Lluitiy/myd",
+		ref: "https://myd-vchumack.vercel.app/",
+		github: "https://github.com/vchumack/MYD",
 		description:
 			"A one-page website for a studio that provides website development services",
 		technologies: "React, Next.js, React Hook Form, Sass",
